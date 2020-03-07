@@ -4,19 +4,85 @@ import styled from "styled-components";
 import Calculator from "./calculator";
 import Deposit from "./types/Deposit";
 import data from "./data.json";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import addImage from "./assets/add.png";
+import deleteImage from "./assets/delete.png";
+
 const calculator = new Calculator();
 
 const Container = styled.div`
-  background-color: #282c34;
+  background-color: #e6e6e6;
   height: 100%;
-  color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
 `;
 
-const CurrentBalanceContainer = styled.div``;
-const InterestRate = styled.div``;
-const DepositsContainer = styled.div``;
-const DepositView = styled.div``;
+const CurrentStatusContainer = styled.div`
+  display: flex;
+  font-size: 2em;
+`;
+const CurrentDate = styled.div``;
+const CurrentDatePicker = styled(DatePicker)`
+  font-size: 1em;
+  width: 160px;
+`;
+const CurrentBalanceContainer = styled.div`
+  margin-left: 1em;
+`;
+const InterestRate = styled.div`
+  margin-top: 0.5em;
+`;
+const DepositsContainer = styled.div`
+  margin-top: 2em;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const DepositHeader = styled.h4`
+  margin-bottom: 0.5em;
+`;
+const DepositView = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Image = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+const DeleteImage = styled(Image)`
+  margin-left: 16px;
+`;
+const AddImage = styled(Image)`
+  margin-top: 1em;
+`;
 
+const AddDepositsContainer = styled.div`
+  margin-top: 1em;
+
+  display: flex;
+  align-items: center;
+`;
+const AddDepositDatePicker = styled(DatePicker)`
+  font-size: 1em;
+  width: 125px;
+  text-align: center;
+`;
+
+const AddDepositInput = styled.input`
+  font-size: 1em;
+  width: 80px;
+  text-align: center;
+  margin-left: 1em;
+`;
+
+const AddDepositImage = styled(Image)`
+  margin-left: 1em;
+`;
 function App() {
   const [currentDate, setCurrentDate] = useState(
     new Date(new Date().toDateString())
@@ -26,22 +92,85 @@ function App() {
   const [deposits, setDeposits] = useState(
     data.deposits.map(d => new Deposit(d.date, d.amount))
   );
-  const [balance, setBalance] = useState(
-    calculator.calculateBalance(currentDate, deposits, weeklyRate)
+  const [currentDatePickerVisible, setCurrentDatePickerVisible] = useState(
+    false
   );
+  const [addDepositVisible, setAddDepositVisible] = useState(false);
+  const [addDepositDate, setAddDepositDate] = useState(
+    new Date(new Date().toDateString())
+  );
+  const [addDepositValue, setAddDepositValue] = useState(5);
+
+  const balance = calculator
+    .calculateBalance(currentDate, deposits, weeklyRate)
+    .toFixed(2);
 
   return (
     <Container>
-      <CurrentBalanceContainer>
-        Current Balance: {balance}
-      </CurrentBalanceContainer>
-      <InterestRate>{`${weeklyRate}%`}</InterestRate>
+      <CurrentStatusContainer>
+        {currentDatePickerVisible ? (
+          <CurrentDatePicker
+            selected={new Date()}
+            onChange={(date: any) => {
+              setCurrentDate(date);
+              setCurrentDatePickerVisible(false);
+            }}
+          />
+        ) : (
+          <CurrentDate onClick={() => setCurrentDatePickerVisible(true)}>
+            {currentDate.toLocaleDateString("en-US")}
+          </CurrentDate>
+        )}
+        <CurrentBalanceContainer>${balance}</CurrentBalanceContainer>
+      </CurrentStatusContainer>
+      <InterestRate>{`Weekly Interest Rate:${weeklyRate}%`}</InterestRate>
       <DepositsContainer>
+        <DepositHeader>Deposits</DepositHeader>
         {deposits.map((d, i) => (
-          <DepositView key={i}>{`Amount: ${
-            d.amount
-          }, Date: ${d.date.toLocaleDateString("en-US")}`}</DepositView>
+          <DepositView key={i}>
+            <div>{`${d.date.toLocaleDateString("en-US")}: $${d.amount}`}</div>
+            <DeleteImage
+              src={deleteImage}
+              onClick={() => {
+                setDeposits(deposits.filter((_, j) => i != j));
+              }}
+            ></DeleteImage>
+          </DepositView>
         ))}
+        {addDepositVisible && (
+          <AddDepositsContainer>
+            <AddDepositDatePicker
+              onChange={(date: any) => {
+                setAddDepositDate(date);
+              }}
+              selected={addDepositDate}
+            />
+            <AddDepositInput
+              type="number"
+              value={addDepositValue}
+              onChange={event =>
+                setAddDepositValue(parseInt(event.target.value))
+              }
+            ></AddDepositInput>
+            <AddDepositImage
+              src={addImage}
+              onClick={() => {
+                setDeposits([
+                  ...deposits,
+                  new Deposit(addDepositDate.toISOString(), addDepositValue)
+                ]);
+                setAddDepositValue(5);
+                setAddDepositVisible(false);
+              }}
+            ></AddDepositImage>
+          </AddDepositsContainer>
+        )}
+        {!addDepositVisible && (
+          <AddImage
+            src={addImage}
+            onClick={() => setAddDepositVisible(true)}
+          ></AddImage>
+        )}
       </DepositsContainer>
     </Container>
   );
