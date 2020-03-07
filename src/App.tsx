@@ -90,11 +90,12 @@ function App() {
 
   const [weeklyRate, setWeeklyRate] = useState(data.weeklyRate);
   const [deposits, setDeposits] = useState(
-    data.deposits.map(d => new Deposit(d.date, d.amount))
+    data.deposits.map((d: any) => new Deposit(d.date, d.amount))
   );
   const [currentDatePickerVisible, setCurrentDatePickerVisible] = useState(
     false
   );
+
   const [addDepositVisible, setAddDepositVisible] = useState(false);
   const [addDepositDate, setAddDepositDate] = useState(
     new Date(new Date().toDateString())
