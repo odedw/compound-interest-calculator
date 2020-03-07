@@ -28,7 +28,8 @@ const CurrentStatusContainer = styled.div`
 const CurrentDate = styled.div``;
 const CurrentDatePicker = styled(DatePicker)`
   font-size: 1em;
-  width: 160px;
+  width: 200px;
+  text-align: center;
 `;
 const CurrentBalanceContainer = styled.div`
   margin-left: 1em;
@@ -69,7 +70,7 @@ const AddDepositsContainer = styled.div`
 `;
 const AddDepositDatePicker = styled(DatePicker)`
   font-size: 1em;
-  width: 125px;
+  width: 160px;
   text-align: center;
 `;
 
