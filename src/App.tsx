@@ -125,7 +125,7 @@ function App() {
         )}
         <CurrentBalanceContainer>${balance}</CurrentBalanceContainer>
       </CurrentStatusContainer>
-      <InterestRate>{`Weekly Interest Rate:${weeklyRate}%`}</InterestRate>
+      <InterestRate>{`Weekly Interest Rate: ${weeklyRate}%`}</InterestRate>
       <DepositsContainer>
         <DepositHeader>Deposits</DepositHeader>
         {deposits.map((d, i) => (
