@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b07f2dce46ac5028bb1ce13dcb7a0409",
+    "revision": "a678975d950670ee03ac9e14de1ba5a1",
     "url": "/compound-interest-calculator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compound-interest-calculator/static/css/2.b90ce945.chunk.css"
   },
   {
-    "revision": "a077004d3955fc5695aa",
+    "revision": "1745645aadec45415ac6",
     "url": "/compound-interest-calculator/static/css/main.c0201c46.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compound-interest-calculator/static/js/2.c9ea71f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a077004d3955fc5695aa",
-    "url": "/compound-interest-calculator/static/js/main.741e4ea4.chunk.js"
+    "revision": "1745645aadec45415ac6",
+    "url": "/compound-interest-calculator/static/js/main.cc37fd73.chunk.js"
   },
   {
     "revision": "b1873f294508bc080c93",
