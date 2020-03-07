@@ -18,13 +18,17 @@ const DepositsContainer = styled.div``;
 const DepositView = styled.div``;
 
 function App() {
-  const [currentDate, setCurrentDate] = useState(new Date());
+  const [currentDate, setCurrentDate] = useState(
+    new Date(new Date().toDateString())
+  );
 
   const [weeklyRate, setWeeklyRate] = useState(data.weeklyRate);
   const [deposits, setDeposits] = useState(
     data.deposits.map(d => new Deposit(d.date, d.amount))
   );
-  const [balance, setBalance] = useState(calculator.calculateBalance(currentDate, deposits, weeklyRate));
+  const [balance, setBalance] = useState(
+    calculator.calculateBalance(currentDate, deposits, weeklyRate)
+  );
 
   return (
     <Container>
