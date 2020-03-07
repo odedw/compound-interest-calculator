@@ -84,6 +84,8 @@ const AddDepositInput = styled.input`
 const AddDepositImage = styled(Image)`
   margin-left: 1em;
 `;
+let currentDatePicker: any, addDepositDatePicker: any;
+
 function App() {
   const [currentDate, setCurrentDate] = useState(
     new Date(new Date().toDateString())
@@ -117,9 +119,19 @@ function App() {
               setCurrentDate(date);
               setCurrentDatePickerVisible(false);
             }}
+            ref={c => {
+              currentDatePicker = c;
+            }}
           />
         ) : (
-          <CurrentDate onClick={() => setCurrentDatePickerVisible(true)}>
+          <CurrentDate
+            onClick={() => {
+              setCurrentDatePickerVisible(true);
+              setImmediate(() => {
+                currentDatePicker.setOpen(true);
+              });
+            }}
+          >
             {currentDate.toLocaleDateString("en-US")}
           </CurrentDate>
         )}
@@ -146,6 +158,9 @@ function App() {
                 setAddDepositDate(date);
               }}
               selected={addDepositDate}
+              ref={c => {
+                addDepositDatePicker = c;
+              }}
             />
             <AddDepositInput
               type="number"
@@ -170,7 +185,10 @@ function App() {
         {!addDepositVisible && (
           <AddImage
             src={addImage}
-            onClick={() => setAddDepositVisible(true)}
+            onClick={() => {
+              setAddDepositVisible(true);
+              setImmediate(() => addDepositDatePicker.setOpen(true));
+            }}
           ></AddImage>
         )}
       </DepositsContainer>
