@@ -1,4 +1,9 @@
 {
   "weeklyRate": 5,
-  "deposits": []
+  "deposits": [
+    {
+      "date": "3/9/2020",
+      "amount": 10
+    }
+  ]
 }
