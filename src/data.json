@@ -1,5 +1,5 @@
 {
-  "weeklyRate": 0.8,
+  "dailyRate": 0.001,
   "deposits": [
     {
       "date": "3/9/2020",
@@ -28,6 +28,10 @@
     {
       "date": "8/2/2021",
       "amount": 5
+    },
+    {
+      "date": "3/18/2022",
+      "amount": -22
     }
   ]
 }

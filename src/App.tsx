@@ -91,13 +91,12 @@ function App() {
     new Date(new Date().toDateString())
   );
 
-  const [weeklyRate, setWeeklyRate] = useState(data.weeklyRate);
+  const [dailyRate] = useState(data.dailyRate);
   const [deposits, setDeposits] = useState(
     data.deposits.map((d: any) => new Deposit(d.date, d.amount))
   );
-  const [currentDatePickerVisible, setCurrentDatePickerVisible] = useState(
-    false
-  );
+  const [currentDatePickerVisible, setCurrentDatePickerVisible] =
+    useState(false);
 
   const [addDepositVisible, setAddDepositVisible] = useState(false);
   const [addDepositDate, setAddDepositDate] = useState(
@@ -106,9 +105,9 @@ function App() {
   const [addDepositValue, setAddDepositValue] = useState(5);
 
   const balance = calculator
-    .calculateBalance(currentDate, deposits, weeklyRate)
+    .calculateBalance(currentDate, deposits, dailyRate)
     .toFixed(2);
-
+  console.log(balance);
   return (
     <Container>
       <CurrentStatusContainer>
@@ -119,7 +118,7 @@ function App() {
               setCurrentDate(date);
               setCurrentDatePickerVisible(false);
             }}
-            ref={c => {
+            ref={(c) => {
               currentDatePicker = c;
             }}
           />
@@ -137,7 +136,7 @@ function App() {
         )}
         <CurrentBalanceContainer>${balance}</CurrentBalanceContainer>
       </CurrentStatusContainer>
-      <InterestRate>{`Weekly Interest Rate: ${weeklyRate}%`}</InterestRate>
+      <InterestRate>{`Weekly Interest Rate: ${dailyRate}%`}</InterestRate>
       <DepositsContainer>
         <DepositHeader>Deposits</DepositHeader>
         {deposits.map((d, i) => (
@@ -146,7 +145,7 @@ function App() {
             <DeleteImage
               src={deleteImage}
               onClick={() => {
-                setDeposits(deposits.filter((_, j) => i != j));
+                setDeposits(deposits.filter((_, j) => i !== j));
               }}
             ></DeleteImage>
           </DepositView>
@@ -158,14 +157,14 @@ function App() {
                 setAddDepositDate(date);
               }}
               selected={addDepositDate}
-              ref={c => {
+              ref={(c) => {
                 addDepositDatePicker = c;
               }}
             />
             <AddDepositInput
               type="number"
               value={addDepositValue}
-              onChange={event =>
+              onChange={(event) =>
                 setAddDepositValue(parseInt(event.target.value))
               }
             ></AddDepositInput>
@@ -174,7 +173,7 @@ function App() {
               onClick={() => {
                 setDeposits([
                   ...deposits,
-                  new Deposit(addDepositDate.toISOString(), addDepositValue)
+                  new Deposit(addDepositDate.toISOString(), addDepositValue),
                 ]);
                 setAddDepositValue(5);
                 setAddDepositVisible(false);
