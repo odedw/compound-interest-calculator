@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import styled from "styled-components";
 import Calculator from "./calculator";
 import Deposit from "./types/Deposit";
-import data from "./data.json";
+import cateData from "./cate.json";
+import milaData from "./mila.json";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import addImage from "./assets/add.png";
@@ -87,14 +88,18 @@ const AddDepositImage = styled(Image)`
 let currentDatePicker: any, addDepositDatePicker: any;
 
 function App() {
+  const [name, setName] = useState("Cate");
   const [currentDate, setCurrentDate] = useState(
     new Date(new Date().toDateString())
   );
 
-  const [dailyRate] = useState(data.dailyRate);
+  const [dailyRate] = useState(cateData.dailyRate);
   const [deposits, setDeposits] = useState(
-    data.deposits.map((d: any) => new Deposit(d.date, d.amount))
+    (name === "Cate" ? cateData : milaData).deposits.map(
+      (d: any) => new Deposit(d.date, d.amount)
+    )
   );
+
   const [currentDatePickerVisible, setCurrentDatePickerVisible] =
     useState(false);
 
@@ -104,6 +109,13 @@ function App() {
   );
   const [addDepositValue, setAddDepositValue] = useState(5);
 
+  useEffect(() => {
+    setDeposits(
+      (name === "Cate" ? cateData : milaData).deposits.map(
+        (d: any) => new Deposit(d.date, d.amount)
+      )
+    );
+  }, [name]);
   const balance = calculator
     .calculateBalance(currentDate, deposits, dailyRate)
     .toFixed(2);
@@ -111,6 +123,25 @@ function App() {
   return (
     <Container>
       <CurrentStatusContainer>
+        <select
+          style={{
+            width: "100px",
+            height: "100%",
+            marginRight: "10px",
+            fontSize: "16px",
+          }}
+          onChange={(event) => {
+            console.log("here", event);
+            setName(event.target.value);
+          }}
+        >
+          <option value="Cate" onClick={() => setName("Cate")}>
+            Cate
+          </option>
+          <option value="Mila" onClick={() => setName("Mila")}>
+            Mila
+          </option>
+        </select>
         {currentDatePickerVisible ? (
           <CurrentDatePicker
             selected={new Date()}
