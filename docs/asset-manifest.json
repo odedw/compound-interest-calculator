@@ -1,25 +1,13 @@
 {
   "files": {
-    "main.css": "/compound-interest-calculator/static/css/main.c0201c46.chunk.css",
-    "main.js": "/compound-interest-calculator/static/js/main.50e1f56f.chunk.js",
-    "main.js.map": "/compound-interest-calculator/static/js/main.50e1f56f.chunk.js.map",
-    "runtime-main.js": "/compound-interest-calculator/static/js/runtime-main.32a005fc.js",
-    "runtime-main.js.map": "/compound-interest-calculator/static/js/runtime-main.32a005fc.js.map",
-    "static/css/2.4c0dc63d.chunk.css": "/compound-interest-calculator/static/css/2.4c0dc63d.chunk.css",
-    "static/js/2.3ac33d59.chunk.js": "/compound-interest-calculator/static/js/2.3ac33d59.chunk.js",
-    "static/js/2.3ac33d59.chunk.js.map": "/compound-interest-calculator/static/js/2.3ac33d59.chunk.js.map",
+    "main.css": "/compound-interest-calculator/static/css/main.3c56f9e0.css",
+    "main.js": "/compound-interest-calculator/static/js/main.a9ca9c63.js",
     "index.html": "/compound-interest-calculator/index.html",
-    "precache-manifest.eed0fd757c8334d14e7fb577afa068de.js": "/compound-interest-calculator/precache-manifest.eed0fd757c8334d14e7fb577afa068de.js",
-    "service-worker.js": "/compound-interest-calculator/service-worker.js",
-    "static/css/2.4c0dc63d.chunk.css.map": "/compound-interest-calculator/static/css/2.4c0dc63d.chunk.css.map",
-    "static/css/main.c0201c46.chunk.css.map": "/compound-interest-calculator/static/css/main.c0201c46.chunk.css.map",
-    "static/js/2.3ac33d59.chunk.js.LICENSE.txt": "/compound-interest-calculator/static/js/2.3ac33d59.chunk.js.LICENSE.txt"
+    "main.3c56f9e0.css.map": "/compound-interest-calculator/static/css/main.3c56f9e0.css.map",
+    "main.a9ca9c63.js.map": "/compound-interest-calculator/static/js/main.a9ca9c63.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.32a005fc.js",
-    "static/css/2.4c0dc63d.chunk.css",
-    "static/js/2.3ac33d59.chunk.js",
-    "static/css/main.c0201c46.chunk.css",
-    "static/js/main.50e1f56f.chunk.js"
+    "static/css/main.3c56f9e0.css",
+    "static/js/main.a9ca9c63.js"
   ]
 }
