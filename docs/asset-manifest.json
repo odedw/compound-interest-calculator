@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/compound-interest-calculator/static/css/main.3c56f9e0.css",
-    "main.js": "/compound-interest-calculator/static/js/main.dcd44895.js",
+    "main.js": "/compound-interest-calculator/static/js/main.2127efba.js",
     "index.html": "/compound-interest-calculator/index.html",
     "main.3c56f9e0.css.map": "/compound-interest-calculator/static/css/main.3c56f9e0.css.map",
-    "main.dcd44895.js.map": "/compound-interest-calculator/static/js/main.dcd44895.js.map"
+    "main.2127efba.js.map": "/compound-interest-calculator/static/js/main.2127efba.js.map"
   },
   "entrypoints": [
     "static/css/main.3c56f9e0.css",
-    "static/js/main.dcd44895.js"
+    "static/js/main.2127efba.js"
   ]
 }
