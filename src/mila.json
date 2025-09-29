@@ -77,6 +77,11 @@
     {
       "date": "05/10/2025",
       "amount": -10
+    },
+    {
+      "date":"09/27/2025",
+      "amount":-7,
+      "description":"nintendo online subscription"
     }
   ]
 }
