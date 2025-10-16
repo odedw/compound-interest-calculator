@@ -94,9 +94,14 @@
       "amount": -15
     },
     {
-      "date":"09/27/2025",
-      "amount":-15,
-      "description":"nintendo online subscription"
+      "date": "09/27/2025",
+      "amount": -15,
+      "description": "nintendo online subscription"
+    },
+    {
+      "date": "10/16/2025",
+      "amount": -38,
+      "description": "Asheville NC trip expenses"
     }
   ]
 }
