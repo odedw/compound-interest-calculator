@@ -1,107 +1,112 @@
 {
-  "dailyRate": 0.001,
-  "deposits": [
-    {
-      "date": "3/9/2020",
-      "amount": 10
-    },
-    {
-      "date": "1/19/2021",
-      "amount": 5
-    },
-    {
-      "date": "1/24/2021",
-      "amount": 5
-    },
-    {
-      "date": "2/20/2021",
-      "amount": 5.5
-    },
-    {
-      "date": "3/11/2021",
-      "amount": 4
-    },
-    {
-      "date": "4/4/2021",
-      "amount": 5
-    },
-    {
-      "date": "8/2/2021",
-      "amount": 5
-    },
-    {
-      "date": "3/18/2022",
-      "amount": -22
-    },
-    {
-      "date": "3/20/2023",
-      "amount": 5
-    },
-    {
-      "date": "8/03/2023",
-      "amount": 87
-    },
-    {
-      "date": "9/17/2023",
-      "amount": 11
-    },
-    {
-      "date": "09/30/2023",
-      "amount": -3
-    },
-    {
-      "date": "12/27/2023",
-      "amount": 5
-    },
-    {
-      "date": "04/08/2024",
-      "amount": 1
-    },
-    {
-      "date": "04/15/2024",
-      "amount": 100
-    },
-    {
-      "date": "05/07/2024",
-      "amount": 5
-    },
-    {
-      "date": "07/08/2024",
-      "amount": 5
-    },
-    {
-      "date": "07/21/2024",
-      "amount": 40
-    },
-    {
-      "date": "09/13/2024",
-      "amount": -5
-    },
-    {
-      "date": "01/19/2025",
-      "amount": -20
-    },
-    {
-      "date": "02/26/2025",
-      "amount": -27
-    },
-    {
-      "date": "05/10/2025",
-      "amount": -15
-    },
-    {
-      "date": "07/07/2025",
-      "amount": -15
-    },
-    {
-      "date": "09/27/2025",
-      "amount": -15,
-      "description": "nintendo online subscription"
-    },
-    {
-      "date": "10/16/2025",
-      "amount": -38,
-      "description": "Asheville NC trip expenses"
-    }
-  ]
+	"dailyRate": 0.001,
+	"deposits": [
+		{
+			"date": "3/9/2020",
+			"amount": 10
+		},
+		{
+			"date": "1/19/2021",
+			"amount": 5
+		},
+		{
+			"date": "1/24/2021",
+			"amount": 5
+		},
+		{
+			"date": "2/20/2021",
+			"amount": 5.5
+		},
+		{
+			"date": "3/11/2021",
+			"amount": 4
+		},
+		{
+			"date": "4/4/2021",
+			"amount": 5
+		},
+		{
+			"date": "8/2/2021",
+			"amount": 5
+		},
+		{
+			"date": "3/18/2022",
+			"amount": -22
+		},
+		{
+			"date": "3/20/2023",
+			"amount": 5
+		},
+		{
+			"date": "8/03/2023",
+			"amount": 87
+		},
+		{
+			"date": "9/17/2023",
+			"amount": 11
+		},
+		{
+			"date": "09/30/2023",
+			"amount": -3
+		},
+		{
+			"date": "12/27/2023",
+			"amount": 5
+		},
+		{
+			"date": "04/08/2024",
+			"amount": 1
+		},
+		{
+			"date": "04/15/2024",
+			"amount": 100
+		},
+		{
+			"date": "05/07/2024",
+			"amount": 5
+		},
+		{
+			"date": "07/08/2024",
+			"amount": 5
+		},
+		{
+			"date": "07/21/2024",
+			"amount": 40
+		},
+		{
+			"date": "09/13/2024",
+			"amount": -5
+		},
+		{
+			"date": "01/19/2025",
+			"amount": -20
+		},
+		{
+			"date": "02/26/2025",
+			"amount": -27
+		},
+		{
+			"date": "05/10/2025",
+			"amount": -15
+		},
+		{
+			"date": "07/07/2025",
+			"amount": -15
+		},
+		{
+			"date": "09/27/2025",
+			"amount": -15,
+			"description": "nintendo online subscription"
+		},
+		{
+			"date": "10/16/2025",
+			"amount": -38,
+			"description": "Asheville NC trip expenses"
+		},
+		{
+			"date": "10/30/2025",
+			"amount": -17.72,
+			"description": "guitar strap"
+		}
+	]
 }
