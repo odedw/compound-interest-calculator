@@ -90,8 +90,13 @@
 		},
 		{
 			"date": "11/22/2025",
-			"amount": -12,
+			"amount": -16,
 			"description": "Book fair"
+		},
+		{
+			"date": "11/29/2025",
+			"amount": 25,
+			"description": "Amazon gift card"
 		}
 	]
 }
