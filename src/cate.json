@@ -107,6 +107,11 @@
 			"date": "10/30/2025",
 			"amount": -17.72,
 			"description": "guitar strap"
+		},
+		{
+			"date": "11/22/2025",
+			"amount": -15,
+			"description": "Book fair"
 		}
 	]
 }

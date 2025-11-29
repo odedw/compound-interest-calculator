@@ -1,87 +1,97 @@
 {
-  "dailyRate": 0.001,
-  "deposits": [
-    {
-      "date": "08/26/2023",
-      "amount": 7
-    },
-    {
-      "date": "09/30/2023",
-      "amount": -3
-    },
-    {
-      "date": "10/08/2023",
-      "amount": -4
-    },
-    { "date": "10/14/2023", "amount": 5 },
-    {
-      "date": "12/27/2023",
-      "amount": -5
-    },
-    {
-      "date": "04/03/2024",
-      "amount": 13
-    },
-    {
-      "date": "04/08/2024",
-      "amount": 1
-    },
-    {
-      "date": "04/15/2024",
-      "amount": 100
-    },
-    {
-      "date": "04/27/2024",
-      "amount": -55
-    },
-    {
-      "date": "08/17/2024",
-      "amount": -27
-    },
-    {
-      "date": "09/13/2024",
-      "amount": -26
-    },
-    {
-      "date": "09/29/2024",
-      "amount": 5
-    },
-    {
-      "date": "10/07/2024",
-      "amount": 5
-    },
-    {
-      "date": "10/22/2024",
-      "amount": 5
-    },
-    {
-      "date": "12/02/2024",
-      "amount": -22
-    },
-    {
-      "date": "03/07/2025",
-      "amount": 5
-    },
-    {
-      "date": "03/15/2025",
-      "amount": 5.46
-    },
-    {
-      "date": "04/05/2025",
-      "amount": -5
-    },
-    {
-      "date": "04/12/2025",
-      "amount": -3
-    },
-    {
-      "date": "05/10/2025",
-      "amount": -10
-    },
-    {
-      "date":"09/27/2025",
-      "amount":-7,
-      "description":"nintendo online subscription"
-    }
-  ]
+	"dailyRate": 0.001,
+	"deposits": [
+		{
+			"date": "08/26/2023",
+			"amount": 7
+		},
+		{
+			"date": "09/30/2023",
+			"amount": -3
+		},
+		{
+			"date": "10/08/2023",
+			"amount": -4
+		},
+		{ "date": "10/14/2023", "amount": 5 },
+		{
+			"date": "12/27/2023",
+			"amount": -5
+		},
+		{
+			"date": "04/03/2024",
+			"amount": 13
+		},
+		{
+			"date": "04/08/2024",
+			"amount": 1
+		},
+		{
+			"date": "04/15/2024",
+			"amount": 100
+		},
+		{
+			"date": "04/27/2024",
+			"amount": -55
+		},
+		{
+			"date": "08/17/2024",
+			"amount": -27
+		},
+		{
+			"date": "09/13/2024",
+			"amount": -26
+		},
+		{
+			"date": "09/29/2024",
+			"amount": 5
+		},
+		{
+			"date": "10/07/2024",
+			"amount": 5
+		},
+		{
+			"date": "10/22/2024",
+			"amount": 5
+		},
+		{
+			"date": "12/02/2024",
+			"amount": -22
+		},
+		{
+			"date": "03/07/2025",
+			"amount": 5
+		},
+		{
+			"date": "03/15/2025",
+			"amount": 5.46
+		},
+		{
+			"date": "04/05/2025",
+			"amount": -5
+		},
+		{
+			"date": "04/12/2025",
+			"amount": -3
+		},
+		{
+			"date": "05/10/2025",
+			"amount": -10
+		},
+		{
+			"date": "09/27/2025",
+			"amount": -7,
+			"description": "nintendo online subscription"
+		},
+		{
+			"date": "11/22/2025",
+			"amount": 25,
+			"description": "Amazon gift card"
+		},
+		{
+			"date": "11/22/2025",
+			"amount": -12,
+			"description": "Book fair"
+		}
+	]
 }
