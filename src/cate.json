@@ -112,6 +112,11 @@
 			"date": "11/22/2025",
 			"amount": -15,
 			"description": "Book fair"
+		},
+		{
+			"date": "12/05/2025",
+			"amount": -10,
+			"description": "Butterfly charms"
 		}
 	]
 }
