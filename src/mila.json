@@ -97,6 +97,11 @@
 			"date": "11/29/2025",
 			"amount": 25,
 			"description": "Amazon gift card"
+		},
+		{
+			"date": "12/23/2025",
+			"amount": 5,
+			"description": "Tooth fairy"
 		}
 	]
 }
