@@ -127,6 +127,16 @@
       "date": "01/11/2026",
       "amount": -15,
       "description": "Minecraft"
-    }
+    },
+    {
+			"date": "01/28/2026",
+			"amount": 10,
+			"description": ""
+		},
+		{
+			"date": "01/28/2026",
+			"amount": -3,
+			"description": "Coffee for mommy"
+		}
   ]
 }

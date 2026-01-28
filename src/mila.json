@@ -102,6 +102,17 @@
 			"date": "12/23/2025",
 			"amount": 5,
 			"description": "Tooth fairy"
+		},
+		{
+			"date": "01/28/2026",
+			"amount": -6,
+			"description": ""
+		},
+		{
+			"date": "01/28/2026",
+			"amount": -3,
+			"description": "Coffee for mommy"
 		}
+
 	]
 }
