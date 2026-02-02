@@ -112,6 +112,11 @@
 			"date": "01/28/2026",
 			"amount": -3,
 			"description": "Coffee for mommy"
+		},
+		{
+		  "date": "01/29/2026",
+		  "amount": -4.5,
+		  "description": "Cloud shaped rock"
 		}
 
 	]
