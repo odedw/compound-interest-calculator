@@ -13,7 +13,10 @@
 			"date": "10/08/2023",
 			"amount": -4
 		},
-		{ "date": "10/14/2023", "amount": 5 },
+		{
+			"date": "10/14/2023",
+			"amount": 5
+		},
 		{
 			"date": "12/27/2023",
 			"amount": -5
@@ -114,10 +117,19 @@
 			"description": "Coffee for mommy"
 		},
 		{
-		  "date": "01/29/2026",
-		  "amount": -4.5,
-		  "description": "Cloud shaped rock"
+			"date": "01/29/2026",
+			"amount": -4.5,
+			"description": "Cloud shaped rock"
+		},
+		{
+			"date": "02/16/2026",
+			"amount": -6,
+			"description": "Poppy at JiuJitsu"
+		},
+		{
+			"date": "02/16/2026",
+			"amount": 7,
+			"description": "Chores"
 		}
-
 	]
 }
