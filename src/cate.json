@@ -129,19 +129,29 @@
       "description": "Minecraft"
     },
     {
-			"date": "01/28/2026",
-			"amount": 10,
-			"description": ""
-		},
-		{
-			"date": "01/28/2026",
-			"amount": -3,
-			"description": "Coffee for mommy"
-		},
+      "date": "01/28/2026",
+      "amount": 10,
+      "description": ""
+    },
+    {
+      "date": "01/28/2026",
+      "amount": -3,
+      "description": "Coffee for mommy"
+    },
     {
       "date": "01/29/2026",
       "amount": -8,
       "description": "Earrings"
+    },
+    {
+      "date": "02/26/2026",
+      "amount": 35,
+      "description": "Walking Loki"
+    },
+    {
+      "date": "02/26/2026",
+      "amount": -14,
+      "description": "girlscout cookies"
     }
   ]
 }
