@@ -130,6 +130,11 @@
 			"date": "02/16/2026",
 			"amount": 7,
 			"description": "Chores"
+		},
+		{
+			"date": "03/15/2026",
+			"amount": -10,
+			"description": "Present for mommy"
 		}
 	]
 }
