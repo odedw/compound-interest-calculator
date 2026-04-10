@@ -160,8 +160,13 @@
     },
     {
       "date": "04/10/2026",
-      "amount": -1,
+      "amount": -2,
       "description": "payment for mila"
-    }
+    },
+		{
+			"date": "04/10/2026",
+			"amount": 5,
+			"description": "outdoor chores"
+		}
   ]
 }
