@@ -163,10 +163,25 @@
       "amount": -2,
       "description": "payment for mila"
     },
-		{
-			"date": "04/10/2026",
-			"amount": 5,
-			"description": "outdoor chores"
-		}
+    {
+      "date": "04/10/2026",
+      "amount": 5,
+      "description": "outdoor chores"
+    },
+    {
+      "date": "04/22/2026",
+      "amount": -32,
+      "description": "yarn holder"
+    },
+    {
+      "date": "04/22/2026",
+      "amount": -42.89,
+      "description": "yarn winder"
+    },
+    {
+      "date": "04/22/2026",
+      "amount": 35,
+      "description": "walking loki"
+    }
   ]
 }
