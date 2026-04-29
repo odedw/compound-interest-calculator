@@ -155,6 +155,11 @@
 			"date": "04/10/2026",
 			"amount": 5,
 			"description": "outdoor chores"
+		},
+		{
+			"date": "04/26/2026",
+			"amount": -18,
+			"description": "independence day event"
 		}
 	]
 }
