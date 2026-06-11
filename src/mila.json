@@ -160,6 +160,11 @@
 			"date": "04/26/2026",
 			"amount": -18,
 			"description": "independence day event"
+		},
+		{
+			"date": "06/05/2026",
+			"amount": 10,
+			"description": "yard work"
 		}
 	]
 }
