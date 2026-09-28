@@ -192,6 +192,11 @@
       "date": "06/05/2026",
       "amount": 10,
       "description": "yard work"
+    },
+    {
+      "date": "09/28/2026",
+      "amount": 30,
+      "description": "walking loki"
     }
   ]
 }
