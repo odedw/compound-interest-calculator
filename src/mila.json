@@ -170,6 +170,11 @@
 			"date": "06/23/2026",
 			"amount": 8,
 			"description": "chess subscription"
+		},
+		{
+			"date": "11/10/2026",
+			"amount": 20,
+			"description": "gift from malek"
 		}
 	]
 }
