@@ -207,6 +207,11 @@
       "date": "11/13/2026",
       "amount": 15,
       "description": "yard work"
+    },
+    {
+      "date": "11/22/2026",
+      "amount": 25,
+      "description": "loki"
     }
   ]
 }
