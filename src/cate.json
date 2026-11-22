@@ -212,6 +212,11 @@
       "date": "11/22/2026",
       "amount": 25,
       "description": "loki"
+    },
+    {
+      "date": "11/22/2026",
+      "amount": -50,
+      "description": "Michaels"
     }
   ]
 }
